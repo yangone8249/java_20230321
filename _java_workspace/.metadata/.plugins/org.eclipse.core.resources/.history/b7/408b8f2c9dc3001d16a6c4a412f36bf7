@@ -1,0 +1,46 @@
+package day17;
+
+public class StringBufferEx {
+
+	public static void main(String[] args) {
+		// String객체 : 문자열을 표현
+		/* StringBuffer : JS에서 많이씀
+		 * StringBuffer : 문자열을 추가하거나, 변경할때 주로 사용하는 객체
+		 * append : 문자열 추가
+		 * insert : 특정 위치에 문자열 추가
+		 * substring : 문자열 추출
+		 */
+		
+		
+		// Buffer는 멀티쓰레드에서 안정적으로 실행됨
+		StringBuffer sb = new StringBuffer();
+		sb.append("hello");
+		sb.append(" ");
+		sb.append("java");
+		sb.insert(0, "hi");
+		sb.insert(2, " ");
+		// 객체만찍으면 주소가 나와서, toString을 사용해야 객체 안에 존재하는 문자열을 출력한다.
+		System.out.println(sb.toString()); 
+		
+		// 버퍼의 문자열을 대입해서 출력
+		String result = sb.toString();
+		System.out.println(result);
+		
+		// 연산자를 이용하여 문자열 출력
+		String str = "";
+		str += "hello";
+		str += " ";
+		str += "java";
+		System.out.println(str);
+		
+		// StringBuilder는 Buffer와 같은 기능이다. (성능이 조금 우수함)
+		StringBuilder sb1 = new StringBuilder();
+		sb1.append("hello");
+		sb1.append(" ");
+		sb1.append("js");
+		System.out.println(sb1);
+		System.out.println(sb1.substring(2,8));
+		
+	}
+
+}

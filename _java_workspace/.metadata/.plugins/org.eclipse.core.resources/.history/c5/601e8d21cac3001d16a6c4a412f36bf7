@@ -1,0 +1,49 @@
+package day17;
+
+import java.util.Scanner;
+
+public class WordMain {
+	/* 단어장 프로그램 만들기
+	 * Word class
+	 * 단어, 의미를 저장하는 클래스
+	 * word, mean 생성자만들어서 하기
+	 * 예) aplle : 사과
+	 * 주의!! 오름차순으로 정렬해서 출력하기
+	 * 1. 단어추가
+	 * 2. 단어출력(정렬해서/key를 기준으로)
+	 * 
+	 */
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		WordManager wm = new WordManager();
+		
+		int menu;
+		do {
+			System.out.println("---메뉴선택---");
+			 menu = scan.nextInt();
+			
+			switch(menu) {
+			case 1: wm.add(scan); break;
+			case 2: wm.printProduct(); break;
+			case 3: wm.orderPick(scan); break;
+			case 4: wm.printOrder(); break;
+			case 5: return;
+			 default : System.out.println("메뉴 오류!");
+			}
+			
+			
+			
+		}while(menu!=5);
+		System.out.println("종료~!!");
+		
+		
+		
+		
+	}
+	
+	
+
+
+
+}

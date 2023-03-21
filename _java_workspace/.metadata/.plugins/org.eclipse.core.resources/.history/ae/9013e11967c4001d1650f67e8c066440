@@ -1,0 +1,77 @@
+package day18;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class EnglishDictionary {
+	public static void main(String[]args) {
+		Word e = new Word();
+		
+		e.makeWord();
+		
+		
+	}
+	
+
+}
+class Dictionary{
+	
+}
+class Word {
+	//hello : 안녕, 아침인사, 반가움, 비슷한말 hi
+	private Map<String, ArrayList<String>> words = new HashMap<>();
+	private ArrayList<String> word = new ArrayList<String>();
+	Scanner scan = new Scanner(System.in);
+	
+	/* y를 입력하면 단어를 입력, n을 입력하면 종료
+	 * 단어가 이미 있으면 "이미있는단어입니다" 등록금지!
+	 * 메서드명 makeWord
+	 */
+	public void makeWord() {
+		
+		
+			
+			
+			
+				System.out.println("키워드입력:");
+				String key = scan.next();
+				
+//				if()
+				int cnt=0;
+				do {
+					System.out.println("단어를 입력하시겠습니까? y/n");
+					char yn = scan.next().charAt(0);
+					if (yn == 'y') {
+						System.out.println("단어입력:");
+						String mean = scan.next();
+						
+						word.add(mean);
+						
+					} else if (yn == 'n') {
+						System.out.println("프로그램을 종료합니다.");
+						words.put(key, word);
+						break;
+					} else {
+						System.out.println("y/n를 입력하세요.\n");
+						continue;
+					}
+					
+				} while (true);
+				
+				
+				
+				for(Map.Entry<String, ArrayList<String>> str : words.entrySet()) {
+					
+					System.out.print(str.getKey());
+					for(String tmp : word) {
+						System.out.print(tmp+" ");
+					}
+					
+					System.out.println();
+				}
+				
+				
+	}
+}

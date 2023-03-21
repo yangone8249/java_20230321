@@ -1,0 +1,50 @@
+package day16;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ProductManager implements ProductInterface{
+	
+	private ArrayList<String> menu = new ArrayList<String>();
+	private ArrayList<Integer> price = new ArrayList<Integer>();
+	
+	
+	@Override
+	public void add(Scanner scan) {
+			System.out.print("메뉴추가 기능입니다.\n추가할 메뉴를 입력하세요:");
+			String m = scan.next();
+			System.out.print(m+"의 가격을 입력하세요:");
+			int p = scan.nextInt();
+			menu.add(m);
+			price.add(p);
+			
+	}
+
+	@Override
+	public void printProduct() {
+			System.out.println("---메뉴 리스트 출력---");
+			for(int i=0; i<menu.size();i++) {
+				System.out.println(menu.get(i)+":"+price.get(i)+"원");
+			}
+	}
+	
+	@Override
+	public void orderPick(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

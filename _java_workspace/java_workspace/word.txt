@@ -1,0 +1,6 @@
+단어장
+Word [word=hello, mean=안녕]
+Word [word=hi, mean=안녕]
+Word [word=apple, mean=사과]
+Word [word=orange, mean=오렌지]
+Word [word=banana, mean=바나나]

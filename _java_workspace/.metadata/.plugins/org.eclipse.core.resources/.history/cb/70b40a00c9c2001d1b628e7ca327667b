@@ -1,0 +1,67 @@
+package day15;
+import java.util.Scanner;
+public class CourseManagement {
+
+	public static void main(String[] args) {
+		/* 배열을 이용해서 수강관리 프로그램 작성
+		 * 인터페이스 활용 - program
+		 * 1. 학생에 대한 리스트 출력
+		 * 2. 학생 등록
+		 * 3. 학생 검색
+		 * 4. 학생별로 수강신청
+		 * 5. 수강철회
+		 * 6. 종료
+		 * class - subject (별도 생성)
+		 * 과목클래스에서 나타내는것은 = 한 과목의 정보를 나타내는 클래스
+		 * ㄴ 과목코드, 과목명, 학점, 시수(시간), 교수명, 학기, 전공or교양, 수업시간표
+		 * 
+		 * class - student (별도 생성)
+		 * 학생클래스 = 한 학생의 정보를 나타내는 클래스
+		 * ㄴ학번, 이름, 주민번호, 학부, 학과, 수강과목(과목클래스를 배열로 생성)
+		 * ㄴ수강과목에 대한 count 변수 (번지,index)
+		 * ㄴ메서드 : 수강과목 추가(배열이 다 찼다면 늘려주기), 수강과목 삭제
+		 * 
+		 * class - studentManager (인터페이스 구현)
+		 * ㄴ program 인터페이스에 대한 구현임.
+		 * 
+		 * class - main
+		 * ㄴ 메뉴구성 : 눈에보이는 UI
+		 * 학생등록
+		 * 학생확인(학생리스트)
+		 * 학생검색 ( 한학생의 정보가 출력 - 학생정보, 수강정보 같이 출력)
+		 * 수강신청
+		 * 수강철회
+		 * */
+		Scanner scan = new Scanner(System.in);
+		programManager pm = new programManager();
+		
+		int menu = 0;
+		do {
+			//메뉴넣기
+			
+			System.out.println("------menu입니다.------");
+			System.out.println("1.학생등록   2.학생확인   3.학생검색   4.수강신청   5.수강철회   6.종료");
+			int select = scan.nextInt();
+			
+			//메뉴 값 입력받기
+			switch (select) {
+			case 1: pm.printStudent(); cnt++; break;
+			case 2: pm.insertStudent(scan); break;
+			case 3: pm.searchStudent(scan); break;
+			case 4: pm.registerSubject(scan); break;
+			case 5: pm.deleteSubject(scan); break;
+			case 6: System.out.println("프로그램을 종료합니다."); break;
+			default:
+				System.out.println("잘못입력하셨습니다. 다시 입력해주세요.");
+				continue;
+			}
+			
+			
+		}while(menu != 6);
+		
+	
+			
+	}
+
+}
+

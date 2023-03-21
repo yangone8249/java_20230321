@@ -1,0 +1,22 @@
+package day16;
+
+import java.util.Scanner;
+
+public class main {
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) {
+		Order order = new Order();
+		do {
+			System.out.println("1.메뉴추가   2.메뉴리스트   3.프로그램 종료");
+			int select = scan.nextInt();
+			
+			switch(select) {
+			case 1: order.createMenu(); break;
+			case 2:	order.printList(); break;
+			case 3: System.out.println("프로그램 종료."); return;
+				default : System.out.println("잘못입력하셨습니다."); continue;
+			}
+		}while(true);
+	}
+
+}

@@ -1,0 +1,21 @@
+package day19;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriterEx01 {
+
+	public static void main(String[] args) throws IOException {
+		/* 문자 기반스트림 
+		 */
+		FileWriter fw = new FileWriter("test.txt");
+		
+		for(int i=1;i<=10; i++) {
+			// \r : 줄바꿈후 맨끝부터 다시시작.
+			// \n : 줄바꿈후 첫문장부터 시작.
+			String data = i+"test \r\n";
+			
+		}
+	}
+
+}

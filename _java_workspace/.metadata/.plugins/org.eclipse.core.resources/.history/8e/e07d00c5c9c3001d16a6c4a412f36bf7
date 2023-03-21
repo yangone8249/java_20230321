@@ -1,0 +1,26 @@
+package day17;
+
+public class WordMain {
+	/* 단어장 프로그램 만들기
+	 * Word class
+	 * 단어, 의미를 저장하는 클래스
+	 * word, mean 생성자만들어서 하기
+	 * 예) aplle : 사과
+	 * 주의!! 오름차순으로 정렬해서 출력하기
+	 * 1. 단어추가
+	 * 2. 단어출력(정렬해서/key를 기준으로)
+	 * 
+	 */
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+	}
+	
+
+
+
+}

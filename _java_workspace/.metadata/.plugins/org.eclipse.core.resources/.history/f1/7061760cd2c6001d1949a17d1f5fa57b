@@ -1,0 +1,29 @@
+package day19;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class BufferedReaderEx02 {
+
+	public static void main(String[] args) throws IOException {
+		/* BufferedReader, PrintWriter
+		 * 파일을 읽은 후 복사하여 객체 생성
+		 * out.txt에서 파일을 Buffered로 읽은 후 
+		 * => out2.txt로 신규 생성
+		 */
+		BufferedReader read = new BufferedReader(new FileReader("D:\\_java_workspace\\java_workspace\\out.txt"));
+		
+		while(true) {
+			if(read.readLine() == null ) {
+				break;
+			}
+			System.out.println(read.readLine());
+		}
+		
+		
+	}
+
+}

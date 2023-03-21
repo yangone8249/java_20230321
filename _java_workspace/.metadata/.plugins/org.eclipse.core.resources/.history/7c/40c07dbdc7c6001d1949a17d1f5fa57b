@@ -1,0 +1,25 @@
+package day19;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class InputStreamEx01 {
+
+	public static void main(String[] args) throws IOException {
+		// FileInputStream : Byte 단위 기반 스트림
+		byte[] b = new byte[1024];
+		FileInputStream input = new FileInputStream("out.txt");
+		
+		input.read(b); //input에 속한 out.txt파일을 read함
+		String data = new String(b);
+		System.out.println(data);
+		
+		new String(b);
+		System.out.println(b);
+		
+		System.out.println(new String(b));
+		
+	}
+
+}

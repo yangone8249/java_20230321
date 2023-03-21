@@ -1,0 +1,17 @@
+package day18;
+
+import java.util.Scanner;
+
+public class test {
+	public static void main(String[]args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("거스름돈 입력");
+		int money = scan.nextInt();
+		int a=5000,b=1000,c=100;
+		money /=a;
+		
+		System.out.printf("5000원권:%d장",money);
+		
+	}
+}

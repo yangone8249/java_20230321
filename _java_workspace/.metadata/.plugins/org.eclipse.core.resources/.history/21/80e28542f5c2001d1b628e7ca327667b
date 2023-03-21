@@ -1,0 +1,22 @@
+package day16;
+
+import java.util.Scanner;
+
+public class Order extends Product {
+	Scanner scan = new Scanner(System.in);
+	
+	void createMenu() {
+		System.out.print("메뉴추가 기능입니다.\n추가할 메뉴를 입력하세요:");
+		String createMenu = scan.next();
+		menu.add(createMenu);
+		System.out.println(createMenu+"의 가격을 입력하세요:");
+		int menuPrice = scan.nextInt();
+		price.add(menuPrice);
+	}
+	void printList() {
+		System.out.println("---메뉴 리스트 출력---");
+		for(int i=0; i<menu.size();i++) {
+			System.out.println(menu.get(i)+":"+price.get(i)+"원");
+		}
+	}
+}

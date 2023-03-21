@@ -1,0 +1,48 @@
+package day15;
+
+import java.util.Scanner;
+
+public class programManager implements program {
+
+	 /* class - studentManager (인터페이스 구현)
+	  ㄴ program 인터페이스에 대한 구현임.
+	 */
+	Scanner scan = new Scanner(System.in);
+	student stu = new student();
+	subject sub = new subject();
+	
+	@Override
+	public void printStudent() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void insertStudent(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void searchStudent(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void registerSubject(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteSubject(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+/* class - studentManager (인터페이스 구현)
+ ㄴ program 인터페이스에 대한 구현임.*/
+	
+	
+}

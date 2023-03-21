@@ -1,0 +1,20 @@
+package day18;
+
+public class day18과제 {
+
+	public static void main(String[] args) {
+		/*여행상품
+		여행비용은 15세이상100만원, 15세 미만 50만원
+		고객 3명이 패키지 여행을 떠나려할때
+		1.비용계산
+		2.비용계산
+		
+		스트림으로 표현
+		고객은 클래스로 생성
+		Arraylist로 추가
+		
+		 */
+
+	}
+
+}

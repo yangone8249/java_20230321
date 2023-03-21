@@ -1,0 +1,23 @@
+package day15;
+
+import java.util.Scanner;
+
+public class student {
+	/* class - student (별도 생성)
+	 * 학생클래스 = 한 학생의 정보를 나타내는 클래스
+	 * ㄴ학번, 이름, 주민번호, 학부, 학과, 수강과목(과목클래스를 배열로 생성)
+	 * ㄴ수강과목에 대한 count 변수 (번지,index)
+	 	ㄴ메서드 : 수강과목 추가(배열이 다 찼다면 늘려주기), 수강과목 삭제
+	 	ㄴ생성자, get/set, 출력(toString)/2가지 형태로
+	 */ 
+	
+	subject sub = new subject();
+	
+	
+	String stdName, stdNum, registerNum, faculty, major;
+	subject[] subjectlist;
+	int subCount;
+	
+	
+	
+}

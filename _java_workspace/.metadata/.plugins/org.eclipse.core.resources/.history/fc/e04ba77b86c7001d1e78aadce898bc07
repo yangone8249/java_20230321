@@ -1,0 +1,23 @@
+package day20;
+
+class Bank{
+	// 계좌의 돈
+	private int money = 10000;
+	// 입금
+	public void saveMoney(int save) {
+		int m = this.money;
+		Thread.sleep(m); // 대기시키는 함수
+		
+	}	
+	// 출금
+	
+}
+
+public class SyncMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

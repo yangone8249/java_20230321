@@ -1,0 +1,10 @@
+package day17;
+
+public interface WordInterface {
+	
+	void add();
+	void print();
+	void read();
+	void update();
+	void delete();	
+}

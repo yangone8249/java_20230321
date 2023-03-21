@@ -1,0 +1,18 @@
+package day20;
+
+class Bank{
+	// 계좌의 돈
+	private int money = 10000;
+	// 입금
+	
+	// 출금
+}
+
+public class SyncMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

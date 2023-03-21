@@ -1,0 +1,12 @@
+package day19;
+
+public class IOStreamEx {
+
+	public static void main(String[] args) {
+		/* 가나다라마바사아자차파카타하
+		 * 
+		 */
+
+	}
+
+}

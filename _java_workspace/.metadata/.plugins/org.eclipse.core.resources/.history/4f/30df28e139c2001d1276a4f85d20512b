@@ -1,0 +1,98 @@
+package day15;
+
+import java.util.Scanner;
+
+public class student {
+	/* class - student (별도 생성)
+	 * 학생클래스 = 한 학생의 정보를 나타내는 클래스
+	 * ㄴ학번, 이름, 주민번호, 학부, 학과, 수강과목(과목클래스를 배열로 생성)
+	 * ㄴ수강과목에 대한 count 변수 (번지,index)
+	 	ㄴ메서드 : 수강과목 추가(배열이 다 찼다면 늘려주기), 수강과목 삭제
+	 	ㄴ생성자, get/set, 출력(toString)/2가지 형태로
+	 */ 
+	
+	
+	
+	private String stdName, stdNum, registerNum, faculty, major;
+	private subject[] subjectlist;
+	private int subCount;
+	
+	//생성자
+	public student() {}
+	//전체 요소를 받는 생성자
+	public student(String stdName, String stdNum, String registerNum, String faculty, String major) {
+		this.stdName = stdName;
+		this.stdNum = stdNum;
+		this.registerNum = registerNum;
+		this.faculty = faculty;
+		this.major = major;
+	}
+	
+	//메서드
+	/* print method : 학생 정보만 출력
+	 */
+	public void stdPrint() {
+		System.out.println("학생명(학번):"+stdName+"("+stdNum+")");
+		System.out.println("학부(학과):"+faculty+"("+major+")");
+	}
+	
+	//수강과목을 출력하는 메서드
+	public void subPrint() {
+		//수강과목이 없을때
+		if(subCount==0) {
+			System.out.println("수강과목이 없습니다.");
+		}else{
+			//수강과목이 있을때 : 수강과목은 몇개 있는지 모름 (for문사용)
+			for(int i=0; i<subCount; i++) {
+				System.out.println(subjectlist[i]);
+				//print메서드로 직접 sysout을 했을 경우엔 그냥 subjectlist만 사용한다.
+			}
+		}
+		
+		
+	}
+	
+	//subCount는 확인만하기때문에 getter만 만들고 setter는 안만든다(중요!)
+	public String getStdName() {
+		return stdName;
+	}
+	public void setStdName(String stdName) {
+		this.stdName = stdName;
+	}
+	public String getStdNum() {
+		return stdNum;
+	}
+	public void setStdNum(String stdNum) {
+		this.stdNum = stdNum;
+	}
+	public String getRegisterNum() {
+		return registerNum;
+	}
+	public void setRegisterNum(String registerNum) {
+		this.registerNum = registerNum;
+	}
+	public String getFaculty() {
+		return faculty;
+	}
+	public void setFaculty(String faculty) {
+		this.faculty = faculty;
+	}
+	public String getMajor() {
+		return major;
+	}
+	public void setMajor(String major) {
+		this.major = major;
+	}
+	public subject[] getSubjectlist() {
+		return subjectlist;
+	}
+	public void setSubjectlist(subject[] subjectlist) {
+		this.subjectlist = subjectlist;
+	}
+	public int getSubCount() {
+		return subCount;
+	}
+	
+	
+	
+}

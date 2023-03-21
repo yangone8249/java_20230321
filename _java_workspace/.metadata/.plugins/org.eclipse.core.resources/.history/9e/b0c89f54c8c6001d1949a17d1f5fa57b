@@ -1,0 +1,12 @@
+package day19;
+
+public class BufferedReaderEx01 {
+
+	public static void main(String[] args) {
+		/* BufferedReader : 문자 보조스트림
+		 * 라인단위로 읽어올 수 있다.
+		 * */
+
+	}
+
+}

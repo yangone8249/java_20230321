@@ -1,0 +1,12 @@
+package day19;
+
+public class BufferedReaderEx02 {
+
+	public static void main(String[] args) {
+		/* BufferedReader, PrintWriter를 이용하여
+		 * 파일을 읽은 후
+		 */
+
+	}
+
+}

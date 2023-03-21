@@ -1,0 +1,12 @@
+package day17;
+
+import java.util.Scanner;
+
+public interface WordInterface {
+	
+	void add(Scanner scan);
+	void print();
+	void read(Scanner scan);
+	void update(Scanner scan);
+	void delete(Scanner scan);	
+}

@@ -1,0 +1,68 @@
+package day16;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ProductManager implements ProductInterface{
+	
+	private ArrayList<String> menu = new ArrayList<String>();
+	private ArrayList<Integer> price = new ArrayList<Integer>();
+	
+	
+	@Override
+	public void add(Scanner scan) {
+			System.out.print("메뉴추가 기능입니다.\n추가할 메뉴를 입력하세요:");
+			String m = scan.next();
+			System.out.print(m+"의 가격을 입력하세요:");
+			int p = scan.nextInt();
+			menu.add(m);
+			price.add(p);
+			
+	}
+
+	@Override
+	public void printProduct() {
+			System.out.println("---메뉴 리스트 출력---");
+			for(int i=0; i<menu.size();i++) {
+				System.out.println(menu.get(i)+":"+price.get(i)+"원");
+			}
+	}
+	
+	@Override
+	public void orderPick(Scanner scan) {
+		System.out.println("어떤메뉴로 주문하시겠습니까?");
+		System.out.println("----메뉴리스트----");
+		for(String str : menu) {
+			System.out.println(str);
+		}
+		
+	}
+
+	@Override
+	public void delete(Scanner scan) {
+		
+		System.out.println("삭제할 메뉴를 입력하세요.");
+		String d = scan.next();
+		menu.remove(d);
+	}
+
+	@Override
+	public void update(Scanner scan) {
+		
+		System.out.println("수정할 메뉴를 입력하세요.");
+		String d = scan.next();
+		for(int i=0; i<menu.size(); i++) {
+			if(d.equals(menu.get(i))) {
+				System.out.println(d+"를 어떤 메뉴로 변경하시나요?");
+				String change = scan.next();
+				menu.set(i, change);
+				System.out.println(d+"의 가격은 얼마로 하시나요?");
+				int rePrice = scan.nextInt();
+				price.set(i, rePrice);
+			}
+		}
+		
+	}
+	
+	
+}

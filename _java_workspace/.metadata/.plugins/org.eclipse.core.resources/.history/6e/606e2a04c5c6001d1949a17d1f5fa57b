@@ -1,0 +1,29 @@
+package day19;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class PrintWriterEx01 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		/* PrintWriter : 개체의 형식화된 표현을 텍스트 출력 스트림으로 출력한다.
+		 * Println, print, printf 
+		 */
+		PrintWriter pw = new PrintWriter(System.out);
+		
+		String str = "Hello";
+		
+		pw.print(str);
+		pw.println();
+		pw.println(str);
+		pw.printf("%.2f", Math.PI);
+		
+		pw.flush(); // 메모리(버퍼) 내부에 잔류중인 Byte를 지우는 함수
+		pw.close(); // close를 닫아줘야 결과가 나온다.
+		// close만 사용해도 자동적으로 flush도 적용되기때문에 flush는 크게 상관없다.
+		
+		PrintWriter pw1 = new PrintWriter("text2.txt"); // 파일에 대한 에러가 날 수도있어, Exception 정의
+		
+	}
+
+}

@@ -1,0 +1,35 @@
+package day19;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriterEx01 {
+
+	public static void main(String[] args) throws IOException {
+		/* 문자 기반스트림 
+		 */
+		FileWriter fw = new FileWriter("test.txt"); // 실제 txt파일을 생성 (위치 : src가 속한 java_workspace)
+		
+		for(int i=1;i<=10; i++) {
+			// \r : 줄바꿈후 맨끝부터 다시시작.
+			// \n : 줄바꿈후 첫문장부터 시작.
+			String data = i+" test \r\n";
+			fw.write(data);
+			
+		}
+		
+		fw.close();
+		// 파일을 추가모드로 열기 ("파일명", true)
+		FileWriter fw1 = new FileWriter("test.txt", true); //추가모드로 설정하려면 true를 입력, 기본은 false로 지정되있음.
+		
+		for(int i=11;i<=20; i++) {
+			// \r : 줄바꿈후 맨끝부터 다시시작.
+			// \n : 줄바꿈후 첫문장부터 시작.
+			String data = i+" test \r\n";
+			fw.write(data);
+			
+		}
+		fw.close();
+	}
+
+}

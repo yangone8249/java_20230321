@@ -1,0 +1,38 @@
+package day17;
+
+import java.util.Scanner;
+
+public class WordManager implements WordInterface {
+
+	@Override
+	public void add(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void read(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Scanner scan) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

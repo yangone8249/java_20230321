@@ -1,0 +1,18 @@
+package day15;
+import java.util.Scanner;
+public interface program {
+	//인터페이스 구현
+	/* 인터페이스 활용 - program
+	 * 1. 학생에 대한 리스트 출력
+	 * 2. 학생 등록
+	 * 3. 학생 검색
+	 * 4. 학생별로 수강신청
+	 * 5. 수강철회*/
+	
+	void printStudent(); 
+	void insertStudent(Scanner scan); // 매개변수를 스캐너로 입력받기
+	void searchStudent(Scanner scan);
+	void registerSubject(Scanner scan);
+	void deleteSubject(Scanner scan);
+	
+}

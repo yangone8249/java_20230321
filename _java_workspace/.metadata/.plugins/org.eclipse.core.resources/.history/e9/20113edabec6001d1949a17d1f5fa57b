@@ -1,0 +1,15 @@
+package day19;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriterEx01 {
+
+	public static void main(String[] args) throws IOException {
+		/* 문자 기반스트림 
+		 */
+		FileWriter fw = new FileWriter("test.txt");
+		
+	}
+
+}

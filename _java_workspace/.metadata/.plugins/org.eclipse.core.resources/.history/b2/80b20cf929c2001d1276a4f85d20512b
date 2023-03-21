@@ -1,0 +1,67 @@
+package day15;
+
+public class subject {
+
+	/* class - subject (별도 생성)
+	 * 과목클래스에서 나타내는것은 = 한 과목의 정보를 나타내는 클래스
+	 * ㄴ 과목코드, 과목명, 학점, 시수(시간), 교수명, 학기, 전공or교양, 수업시간표
+	 */
+	
+	int code, srades;
+	String subjectName, classTime, professor, semester,major, schedule; 
+	
+	void korean() {
+		this.code = 01;
+		this.srades = 3;
+		this.classTime = "09:00~10:00";
+		this.professor = "양휘원";
+		this.semester = "1학기";
+		this.major = "교양";
+		this.schedule = "화요일";
+	}
+	void math() {
+		this.code = 02;
+		this.srades = 3;
+		this.classTime = "10:00~11:00";
+		this.professor = "양휘투";
+		this.semester = "1학기";
+		this.major = "교양";
+		this.schedule = "화요일";
+	}
+	void history() {
+		this.code = 03;
+		this.srades = 3;
+		this.classTime = "14:00~15:00";
+		this.professor = "양휘투";
+		this.semester = "1학기";
+		this.major = "교양";
+		this.schedule = "목요일";
+	}
+	void javaProgramming() {
+		this.code = 04;
+		this.srades = 4;
+		this.classTime = ":13:00~14:00";
+		this.professor = "오미란";
+		this.semester = "1학기";
+		this.major = "전공";
+		this.schedule = "수요일";
+	}
+	void cProgramming() {
+		this.code = 05;
+		this.srades = 4;
+		this.classTime = ":14:00~15:00";
+		this.professor = "장미란";
+		this.semester = "1학기";
+		this.major = "전공";
+		this.schedule = "수요일";
+	}
+	void webServerProgramming() {
+		this.code = 06;
+		this.srades = 4;
+		this.classTime = ":10:00~11:00";
+		this.professor = "장미란";
+		this.semester = "1학기";
+		this.major = "전공";
+		this.schedule = "월요일";
+	}
+}

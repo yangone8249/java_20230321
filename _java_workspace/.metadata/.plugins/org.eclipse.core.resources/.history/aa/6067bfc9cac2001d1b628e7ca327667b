@@ -1,0 +1,66 @@
+package day15;
+
+import java.util.Scanner;
+
+public class programManager implements program {
+
+	 /* class - studentManager (인터페이스 구현)
+	  ㄴ program 인터페이스에 대한 구현임.
+	 */
+	//멤버변수 student class, stdCount 변수
+	private student[] std = new student[10]; // student클래스를 배열로 1~10개까지 만듬
+	private int stdCount; // 등록한 학생을 카운트하는 변수
+	
+	// 과목에 대한 클래스는 함수로이루어진게 아니라 생성자로만 정해져있어 객체를 가져올 필요가 없다.
+	// subject는 student를 위한 클래스이다.
+	// subject sub = new subject();
+	
+	@Override
+	public void printStudent() {
+		System.out.println("\n\n\n\n");
+		if(std[0]==null) {
+			System.out.println("등록된 학생이 없습니다.");
+		}
+		for(int i=0; i<stdCount; i++) {
+			std[i].stdPrint(); // 학생정보만 출력
+			printStdOne(std[i]); // 학생정보+수강정보
+		}
+		
+		
+		System.out.println("\n\n\n\n\n\n");
+	}
+
+	@Override
+	public void insertStudent(Scanner scan) {
+		
+		
+	}
+
+	@Override
+	public void searchStudent(Scanner scan) {
+		
+		
+	}
+
+	@Override
+	public void registerSubject(Scanner scan) {
+		
+		
+	}
+
+	@Override
+	public void deleteSubject(Scanner scan) {
+	
+		
+		
+	}
+
+	//1명의 학생정보+수강정보 같이출력하는 메서드
+	public void printStdOne(student s) {
+		System.out.println("---학생정보---");
+		s.stdPrint();
+		System.out.println("---수강정보---");
+		s.subPrint();
+	}
+	
+}
